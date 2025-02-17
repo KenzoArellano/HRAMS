@@ -1,0 +1,384 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+     --job-card-1-color: #fee0cc; /* Administrative Assistant Color */
+  --job-card-2-color: #d4f7ed; /* Financial Staff Color */
+  --job-card-3-color: #e2dbfa; /* College Instructors Color */
+  --job-card-4-color: #e0f3ff; /* College Faculty Color */
+  
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1920px;
+  height: 100vh; /* Ensure it covers the full height */
+  margin: 0 auto;
+  background: rgba(236, 236, 236, 255) !important; /* Light gray with priority */
+}
+.section-header {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  width: 70%;
+  background-color: #e65b7a; /* Pink Background */
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+.flex-row-ff {
+  position: relative;
+  width: 1920px;
+  height: 88px;
+  margin: 0 0 0 0;
+  z-index: 7;
+}
+.rectangle {
+  position: absolute;
+  width: 1920px;
+  height: 88px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+}
+.group {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 14px;
+  left: 1613px;
+  background: url('/image/defaultpfp.png')
+    no-repeat center;
+  background-size: cover;
+  z-index: 6;
+}
+.rectangle-1 {
+  position: absolute;
+  width: 151px;
+  height: 54px;
+  top: 18px;
+  left: 42px;
+  background: url('/image/Logo.png')
+    no-repeat center;
+  background-size: cover;
+  z-index: 7;
+}
+.dashboard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 40px;
+  left: 330px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.approved {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 40px;
+  left: 570px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 3;
+}
+.hired {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 40px;
+  left: 810px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 3;
+}
+.archived {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 40px;
+  left: 1000px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+
+.denied {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 40px;
+  left: 1200px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 4;
+}
+.history {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 30px;
+  top: 40px;
+  left: 1400px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 5;
+}
+.rectangle-2 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 199px;
+  height: 9px;
+  margin: -4px 0 0 290px;
+  background: #e54f70;
+  z-index: -Infinity;
+  border-radius: 11px;
+}
+/* Administrative Admin */
+.job-card-container {
+  position: relative;
+  width: 310px;
+  height: 335px;
+  margin: 100px 10px; /* Top and bottom margins for individual containers */
+  margin-left: 300px;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 2px solid #f4f4f4;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Finance Staff */
+.job-cards-wrapper {
+  display: flex;
+  gap: 10px; /* Space between job cards */
+  justify-content: flex-start;
+}
+
+.job-cards-wrapper > .job-card-container:nth-child(2) {
+  margin-left: 15px; /* Apply specific margin to the second container */
+}
+
+.job-cards-wrapper > .job-card-container:nth-child(3) {
+  margin-left: 15px; /* Apply specific margin to the third container */
+}
+.job-cards-wrapper > .job-card-container:nth-child(4) {
+  margin-left: 15px; /* Apply specific margin to the fourth container */
+}
+
+
+
+/* Job Card */
+.job-card {
+  position: relative;
+  width: 112%;
+  height: 236px;
+  background: var(--job-card-1-color); /* Default background color */
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Move in different directions */
+  margin-top: -13px; /* Moves down */
+  margin-left: -17px; /* Moves right */
+}
+
+/* Apply specific colors for each job card */
+.job-cards-wrapper > .job-card-container:nth-child(1) .job-card {
+  background: var(--job-card-1-color); /* Administrative Assistant Color */
+}
+
+.job-cards-wrapper > .job-card-container:nth-child(2) .job-card {
+  background: var(--job-card-2-color); /* Financial Staff Color */
+}
+
+.job-cards-wrapper > .job-card-container:nth-child(3) .job-card {
+  background: var(--job-card-3-color); /* College Instructors Color */
+}
+
+.job-cards-wrapper > .job-card-container:nth-child(4) .job-card {
+  background: var(--job-card-4-color); /* College Faculty Color */
+}
+
+
+
+
+
+/* Job Details */
+.job-details {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Job Date Button */
+.job-date-btn {
+  position: absolute; /* Allows movement using top, left, right, bottom */
+  width: 121px;
+  height: 37px;
+  background: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth movement */
+
+  /* Example Default Position */
+  top: 10px;
+  left: 10px;
+}
+
+/* Job Title */
+.job-title {
+  font-family: 'Poppins', sans-serif; /* Change to Montserrat if needed */
+  font-size: 30px;
+  font-weight: 600; /* Make it bolder */
+  color: #333;
+  text-align: left;
+  line-height: 1.2;
+  display: block;
+  white-space: nowrap;
+}
+
+
+
+.job-title span {
+  display: block;
+}
+/* Job Type Button */
+.job-type-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #9b9696;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Job Time Icon */
+.job-time-icon {
+  width: 20px;
+  height: 20px;
+  background: url('/image/clocklogo.png') no-repeat center;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+/* Job Type Text */
+.job-type {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Applicants Count */
+.job-applicants {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic; /* Makes text italic */
+  color: #e65b7a;
+  margin-top: 10px;
+  margin-left: -200px;
+}
+
+
+/* View Button */
+.job-view-btn {
+  width: 159px;
+  height: 41px;
+  background: #2b2b2b;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.job-view-text {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
