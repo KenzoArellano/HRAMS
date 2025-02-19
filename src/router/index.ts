@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import AdminLoginPage from '@/page/Adminloginpage.vue'; // Login Page
-
+import ApplicantPortal1 from '@/page/ApplicantPortal1.vue'; // Import your ApplicantPortal1 component
 
 const routes = [
   {
@@ -8,10 +8,14 @@ const routes = [
     name: 'Login',
     component: AdminLoginPage, // Login Page
   },
-
+  {
+    path: '/applicant-portal', // The new route for ApplicantPortal1
+    name: 'ApplicantPortal1',
+    component: ApplicantPortal1, // ApplicantPortal1 component
+  },
   {
     path: '/',
-    redirect: '/login', // Redirect to login initially
+    redirect: '/applicant-portal', // Redirect to ApplicantPortal1 initially
   },
 ];
 
