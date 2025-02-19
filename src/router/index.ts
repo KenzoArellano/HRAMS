@@ -1,13 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AdminLoginPage from '@/page/Adminloginpage.vue'; // Login Page
-import ApplicantPortal1 from '@/page/ApplicantPortal1.vue'; // ApplicantPortal1
-import ApplicantPortal2 from '@/page/ApplicantPortal2.vue'; // ApplicantPortal2 (The next page after applying)
+import ChooseUser from '@/page/ChooseUser.vue';
+import AdminLoginPage from '@/page/AdminLoginPage.vue';
+import ApplicantPortal1 from '@/page/ApplicantPortal1.vue';
+import ApplicantPortal2 from '@/page/ApplicantPortal2.vue';
 
 const routes = [
   {
-    path: '/login',
-    name: 'Login',
-    component: AdminLoginPage,
+    path: '/',
+    name: 'ChooseUser',
+    component: ChooseUser,
+  },
+  {
+    path: '/admin-login',
+    name: 'AdminLoginPage',
+    component: AdminLoginPage, // Used by both HR Admin & Office Heads
   },
   {
     path: '/applicant-portal',
@@ -15,13 +21,9 @@ const routes = [
     component: ApplicantPortal1,
   },
   {
-    path: '/applicant-portal2', // Add route for ApplicantPortal2
+    path: '/applicant-portal2',
     name: 'ApplicantPortal2',
     component: ApplicantPortal2,
-  },
-  {
-    path: '/',
-    redirect: '/applicant-portal',
   },
 ];
 
