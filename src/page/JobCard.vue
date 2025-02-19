@@ -23,8 +23,7 @@
     },
     methods: {
       applyNow() {
-        // Implement the functionality for applying (e.g., redirect to another page, open a form, etc.)
-        alert(`You applied for the job: ${this.title}`);
+        this.$emit('apply'); // Emit the 'apply' event to handle the action in parent
       },
     },
   };

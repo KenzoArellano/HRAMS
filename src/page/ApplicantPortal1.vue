@@ -26,6 +26,7 @@
             'At least one (1) year of work experience',
             'Good human relations, analytical skills, and effective leadership'
           ]"
+          @apply="navigateToApplicantPortal2"
         />
         
         <JobCard 
@@ -38,6 +39,7 @@
             'Experience in payroll and benefits administration',
             'Fresh graduates may apply'
           ]"
+          @apply="navigateToApplicantPortal2"
         />
   
         <JobCard 
@@ -50,6 +52,7 @@
             'At least one (1) year of work experience',
             'Good human relations, analytical skills, and effective leadership'
           ]"
+          @apply="navigateToApplicantPortal2"
         />
   
         <JobCard 
@@ -62,6 +65,7 @@
             'At least one (1) year of work experience',
             'Good human relations, analytical skills, and effective leadership'
           ]"
+          @apply="navigateToApplicantPortal2"
         />
       </section>
     </div>
@@ -74,6 +78,11 @@
     components: {
       JobCard,
     },
+    methods: {
+      navigateToApplicantPortal2() {
+        this.$router.push('/applicant-portal2'); // Redirect to ApplicantPortal2
+      },
+    },
   };
   </script>
   
@@ -81,7 +90,7 @@
   .portal-container {
     font-family: 'Arial', sans-serif;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     text-align: center;
   }
