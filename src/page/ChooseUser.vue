@@ -18,7 +18,7 @@
         <button @click="navigateTo('AdminLoginPage')" class="user-button bg-purple-200">
           As HR Admin<br /><span>Login Now</span>
         </button>
-        <button @click="navigateTo('AdminLoginPage')" class="user-button bg-blue-200">
+        <button @click="navigateTo('OfficeHeadsLoginPage')" class="user-button bg-blue-200">
           As Office Heads<br /><span>Login Now</span>
         </button>
       </div>

@@ -1,0 +1,284 @@
+:root {
+  --default-font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Helvetica,
+    Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei UI', 'Microsoft Yahei',
+    'Source Han Sans CN', sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.main-container {
+  height: 100vh; /* Ensure it takes the full viewport */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensure it fills the screen */
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.rectangle {
+  position: absolute;
+  width: 962px;
+  height: 882px;
+  top: 0;
+  left: -2px;
+  background: url(../assets/images/5c011faa-f81d-423c-a52b-238096fa6908.png) no-repeat center;
+  background-size: cover;
+  z-index: 2;
+}
+.african-american-employer {
+  min-height: 100vh;
+  position: absolute; /* Keep it positioned */
+  width: 50%; /* Ensure it takes half the screen */
+  height: 100vh; /* Stretch to full screen height */
+  top: 0;
+  left: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(229, 79, 112, 0.8),
+      /* Top gradient color with transparency */ rgba(229, 79, 112, 0.6),
+      /* Middle gradient color with more transparency */ rgba(255, 255, 255, 0.3)
+        /* Bottom gradient color with light transparency */
+    ),
+    url('/image/Login background.jpg') no-repeat center center;
+  background-size: cover; /* Ensures full coverage */
+}
+
+.xceltech-high-resolution {
+  position: relative;
+  width: 324px;
+  height: 103px;
+  margin: 117px 0 0 483px;
+  background: url('/image/Logo.png') no-repeat center;
+  background-size: cover;
+  filter: brightness(0) invert(1);
+  z-index: 16;
+}
+.hr-applicant-management {
+  display: flex;
+  flex-direction: column; /* Stack the text lines vertically */
+  align-items: flex-end; /* Align text to the right */
+  justify-content: center; /* Center content vertically if needed */
+  position: relative;
+  width: 681px; /* Adjust width as needed */
+  height: auto; /* Allow height to adjust dynamically */
+  margin: 104px 0 0 126px; /* Adjust positioning */
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 56px;
+  text-align: right; /* Align text to the right */
+  white-space: pre-line; /* Allow multi-line formatting with spacing */
+  z-index: 3;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative; /* Required to ensure text appears above gradient */
+  z-index: 2; /* Place text above gradient */
+}
+
+.rectangle-1 {
+  position: relative;
+  width: 141px;
+  height: 16px;
+  margin: 104px 0 0 666px;
+  background: #ffffff;
+  z-index: 5;
+  border-radius: 8px;
+}
+.manage-applicants {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  width: 681px;
+  height: 56px;
+  margin: 58px 0 0 126px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: right;
+  white-space: nowrap;
+  z-index: 4;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.log-in {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 50px;
+  top: 157px;
+  left: 1108px;
+  color: #e54f70;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.login-account {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 33px;
+  top: 241px;
+  left: 1108px;
+  color: #959595;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.email {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 318px;
+  left: 1108px;
+  color: #e54f70;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 8;
+}
+.rectangle-2 {
+  position: absolute;
+  width: 536px;
+  height: 55px;
+  top: 352px;
+  left: 1108px;
+  background: #ffffff;
+  border: 2px solid #cab4b4;
+  z-index: 10;
+  border-radius: 6px;
+  box-shadow: 5px 2px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.password {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 441px;
+  left: 1108px;
+  color: #e54f70;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 9;
+}
+.rectangle-3 {
+  position: absolute;
+  width: 536px;
+  height: 55px;
+  top: 475px;
+  left: 1108px;
+  background: #ffffff;
+  border: 2px solid #cab4b4;
+  z-index: 11;
+  border-radius: 6px;
+  box-shadow: 5px 2px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.remember-me {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 564px;
+  left: 1144px;
+  color: #8f8f8f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 14;
+}
+.rectangle-4 {
+  position: absolute;
+  width: 26px;
+  height: 23px;
+  top: 564px;
+  left: 1108px;
+  background: #ffffff;
+  border: 2px solid #cab4b4;
+  z-index: 15;
+  border-radius: 6px;
+  box-shadow: 5px 2px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.rectangle-button {
+  position: absolute;
+  width: 536px;
+  height: 54px;
+  top: 624px;
+  left: 1108px;
+  cursor: pointer;
+  background: #e54f70;
+  border: 2px solid #e54f70;
+  z-index: 12;
+  border-radius: 6px;
+  box-shadow: 5px 2px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.sign-in-span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 126px;
+  height: 24px;
+  top: 13px;
+  left: 203px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 13;
+}

@@ -34,10 +34,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useRouter } from 'vue-router'; // Import useRouter to navigate to other pages
-
-// Initialize router
-const router = useRouter();
 
 // Reactive variables for form inputs
 const email = ref('');
@@ -58,9 +54,7 @@ const handleLogin = () => {
   // Check if entered credentials match the hardcoded values
   if (email.value === validEmail && password.value === validPassword) {
     alert(`Login successful for ${email.value}`);
-    
-    // Redirect to Admin Dashboard page
-    router.push({ name: 'AdminDashboardPage' });  // Navigate to AdminDashboardPage
+    // Here you can perform further actions, like showing a success message
   } else {
     alert('Invalid email or password. Please try again.');
   }
